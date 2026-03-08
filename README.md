@@ -1,4 +1,4 @@
-cat > README.md << 'EOF'
+
 # 🎹 MelodiUS — Twin Piano Experience
 
 > Connecting people through synchronised music, anywhere in the world.
