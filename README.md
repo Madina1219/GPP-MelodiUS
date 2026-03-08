@@ -31,7 +31,7 @@ Received by Piano B → LED lights up + sound plays + (optional) solenoid activa
 See folder breakdown in /docs/project-brief.md
 
 ## Team — Group 6 GPP
-- Madina — Project Lead & System Integration
+- Madina Diallo — Project Coordinator
 - [Name] — Hardware Development
 - [Name] — Software & Connectivity
 - [Name] — UX & User Testing
