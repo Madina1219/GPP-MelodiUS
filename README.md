@@ -32,10 +32,10 @@ See folder breakdown in /docs/project-brief.md
 
 ## Team — Group 6 GPP
 - Madina Diallo — Project Coordinator
-- Xintong Shao —— Enclosure design & Making
-- [Name] — Hardware Development
-- [Name] — Software & Connectivity
-- [Name] — UX & User Testing
+- Xintong Shao — Enclosure design & Making
+- All Team Members — Hardware Development
+- Lizi Wang, Ananya Jagadeesh Kedlaya — Software & Connectivity
+- All Team Members — UX & User Testing
 
 ## References
 See /docs/references.md
