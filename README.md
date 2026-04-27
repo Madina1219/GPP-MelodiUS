@@ -134,11 +134,13 @@ The software is organised into clearly separated layers: a hardware layer for GP
 
 ### 2.6 User Testing and Evaluation
 
-- User Feedback: Testers quickly understood the LED feedback without guidance, found the audio response satisfying, and praised the refined physical design.
-- Limitations: Restricted eight-key range and no velocity sensitivity.
-- Functional Results: All key presses correctly triggered notes and LEDs on both devices. Latency over local Wi-Fi stayed under 500 ms, with reliable MQTT delivery.
-- Iterations: Resolved Wi-Fi setup, power consumption, and false-trigger issues.
-- Constraints: Tested on a single network; latency assessed perceptually.
+Informal testing was conducted with team members and external peers to evaluate usability, functionality, and performance.
+◦ User Feedback: Testers quickly understood the LED feedback without guidance, found the audio response satisfying, and praised the refined physical design, which appeared more polished than expected for a prototype.
+◦ Limitations: The eight-key range and absence of velocity sensitivity restricted expressive play.
+◦ Functional Results: All key presses correctly triggered notes and LEDs on both devices, with latency over local Wi-Fi staying under 500 ms and reliable MQTT delivery throughout.
+◦ Iterations: Earlier issues with Wi-Fi setup, power consumption, and false triggers were resolved through successive design refinements.
+
+Overall, the prototype demonstrated reliable synchronous play and a positive user experience, though testing was limited to a single network and latency was assessed perceptually rather than measured with instrumentation.
 ---
 
 ## 3. Production Cost and Sustainability
