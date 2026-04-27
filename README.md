@@ -194,9 +194,9 @@ MelodiUS demonstrates that ambient, emotionally meaningful connection between di
 - Banks, A. and Gupta, R. (2014) *MQTT Version 3.1.1*. OASIS Standard. Available at: <https://www.oasis-open.org/standard/mqttv3-1-1/> (Accessed: 15 April 2026).
 - Espressif Systems (2024) *ESP32 Technical Reference Manual: Inter-IC Sound (I2S)*. Available at: <https://docs.espressif.com/projects/esp-idf/en/release-v4.4/esp32/api-reference/peripherals/i2s.html> (Accessed: 15 April 2026).
 - HiveMQ (2023) *MQTT Essentials: A Lightweight Messaging Protocol for IoT*. Available at: <https://www.hivemq.com/mqtt-essentials/> (Accessed: 15 April 2026).
-- Ishii, H. and Ullmer, B. (1997) 'Tangible bits: towards seamless interfaces between people, bits and atoms', *Proceedings of the SIGCHI Conference on Human Factors in Computing Systems*, pp. 234-241. Available at: <https://doi.org/10.1145/258549.258715>.
+- Ishii, H. and Ullmer, B. (1997) 'Tangible bits: towards seamless interfaces between people, bits and atoms', *Proceedings of the SIGCHI Conference on Human Factors in Computing Systems*, pp. 234-241. Available at: <https://doi.org/10.1145/258549.258715>.(Accessed: 15 April 2026).
 - Picard, R.W. (1997) *Affective Computing*. Cambridge, MA: MIT Press.
 - Rottondi, C., Chafe, C., Allocchio, C. and Sarti, A. (2016) 'An overview on networked music performance technology', *IEEE Access*, 4, pp. 8823-8843. Available at: <https://doi.org/10.1109/ACCESS.2016.2628440>.
 - Smith, J.O. (2010) *Physical Audio Signal Processing*. W3K Publishing. Available at: <https://ccrma.stanford.edu/~jos/pasp/> (Accessed: 15 April 2026).
 - Weichel, C., Lau, M. and Gellersen, H. (2013) 'Enclosed: A component-centric interface for designing prototype enclosures', *Proceedings of the 7th International Conference on Tangible, Embedded and Embodied Interaction*, pp. 215-218. Available at: <https://doi.org/10.1145/2460625.2460659> (Accessed: 3 April 2026).
-- Weiser, M. and Brown, J.S. (1996) 'Designing calm technology', *PowerGrid Journal*, 1(1), pp. 75-85. Available at: <https://calmtech.com/papers/designing-calm-technology>.
+- Weiser, M. and Brown, J.S. (1996) 'Designing calm technology', *PowerGrid Journal*, 1(1), pp. 75-85. Available at: <https://calmtech.com/papers/designing-calm-technology>.(Accessed: 4 April 2026).
