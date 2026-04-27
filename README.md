@@ -133,10 +133,16 @@ The software is organised into clearly separated layers: a hardware layer for GP
 *Figure 7: System architecture - GPIO input is processed locally and published as an MQTT event, then mirrored on the receiving device to drive identical audio and LED output.*
 
 ### 2.6 User Testing and Evaluation
-
-Informal testing was carried out within the team and with peers outside the development group. The LED feedback was understood without instruction, the audio was described as satisfying and responsive, and the physical form factor was rated positively, with several testers commenting that the product felt more polished than expected from a course prototype. Critical feedback focused on the eight-key range, which limits musical expression, and the absence of velocity sensitivity, which means the instrument cannot distinguish between soft and hard presses.
-
-Functionally, every key press triggered the correct note and LED state on both devices. End-to-end latency over a local Wi-Fi network was estimated at under 500 ms, which testers reported as comfortable for synchronous play. MQTT message delivery was reliable across all keys, and extended sessions ran without disconnection. Several practical issues were resolved through iteration: the captive Wi-Fi portal was initially unstable during network switching and was simplified; early prototypes drew constant current because the deep-sleep routine was incomplete, which was addressed by tying sleep to user-input timeouts; and intermittent false triggers caused by noisy wiring were resolved through firmer connections and improved input debouncing in firmware. Latency was assessed perceptually rather than instrumented, and testing was confined to a single local network, both acknowledged limitations.
+## User Feedback
+Testers quickly understood the LED feedback without guidance, found the audio response satisfying, and praised the refined physical design.
+## Limitations
+Restricted eight-key range and no velocity sensitivity.
+## Functional Results
+All key presses correctly triggered notes and LEDs on both devices. Latency over local Wi-Fi stayed under 500 ms, with reliable MQTT delivery.
+## Iterations
+Resolved Wi-Fi setup, power consumption, and false-trigger issues.
+## Constraints
+Tested on a single network; latency assessed perceptually.
 
 ---
 
