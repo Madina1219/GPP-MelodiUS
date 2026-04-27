@@ -66,9 +66,9 @@ A central design decision was approachability. The pianos are compact, 3D-printe
 
 ### 1.3 Context Within Connected Environments Research
 
-MelodiUS sits within a rich lineage of research at the intersection of the Internet of Things, tangible computing, and human-computer interaction. Ishii and Ullmer (1997) argued that embedding computation in everyday objects produces more intuitive, embodied interaction; MelodiUS operationalises this principle directly, with the keys forming the interface and the LEDs and audio output forming tangible representations of networked data.
+MelodiUS sits within a rich lineage of research at the intersection of the Internet of Things, tangible computing, and human-computer interaction. Ishii and Ullmer (1997, pp. 234–241) argued that embedding computation in everyday objects produces more intuitive, embodied interaction; MelodiUS operationalises this principle directly, with the keys forming the interface and the LEDs and audio output forming tangible representations of networked data.
 
-The project also draws on the calm technology tradition (Weiser and Brown, 1996), in which connected devices communicate peripherally without demanding sustained visual attention. Light and sound function here as ambient cues of remote presence rather than as primary information channels. The use of MQTT, a lightweight publish-subscribe protocol widely adopted in IoT deployments, is consistent with established practice for constrained networks (Banks and Gupta, 2014; HiveMQ, 2023).
+The project also draws on the calm technology tradition (Weiser and Brown, 1996, pp. 75–85), in which connected devices communicate peripherally without demanding sustained visual attention. Light and sound function here as ambient cues of remote presence rather than as primary information channels. The use of MQTT, a lightweight publish-subscribe protocol widely adopted in IoT deployments, is consistent with established practice for constrained networks (Banks and Gupta, 2014).
 
 The project further aligns with affective computing, where connected devices mediate emotional states across distance rather than simply transmitting data (Picard, 1997). Within the specific domain of networked music performance (Rottondi et al., 2016), MelodiUS departs from high-fidelity audio streaming by transmitting discrete key-press events instead. This deliberate simplification reduces latency and hardware requirements while preserving the essence of shared musical play, positioning the project as a consumer-oriented interpretation of research-grade network music performance.
 
@@ -84,7 +84,7 @@ The original vision involved full mechanical key actuation using solenoids to ph
 
 ### 2.2 Hardware Architecture
 
-Each device is built around an ESP32 microcontroller and integrates physical input, audio output, and visual feedback into a single self-contained unit. At the input layer, eight tactile push buttons are mapped to GPIO pins and represent the notes C4 to C5. Physical buttons were chosen over capacitive or screen-based alternatives because tactile feedback is fundamental to a musical interaction and lowers the barrier for non-expert users. At the output layer, audio is generated through an I2S interface driving a MAX98357A digital amplifier and a small speaker (Espressif Systems, 2024), which replaced an earlier piezo-buzzer prototype and substantially improved tonal clarity. Visual feedback is provided by a strip of WS2812 addressable LEDs, with two LEDs allocated per key and additional LEDs reserved for system states such as Wi-Fi connectivity and configuration mode, so that the device communicates its state without needing a screen.
+Each device is built around an ESP32 microcontroller and integrates physical input, audio output, and visual feedback into a single self-contained unit. At the input layer, eight tactile push buttons are mapped to GPIO pins and represent the notes C4 to C5. Physical buttons were chosen over capacitive or screen-based alternatives because tactile feedback is fundamental to a musical interaction and lowers the barrier for non-expert users. At the output layer, audio is generated through an I2S interface driving a MAX98357A digital amplifier and a small speaker (Integrated Espressif Systems, 2024), which replaced an earlier piezo-buzzer prototype and substantially improved tonal clarity. Visual feedback is provided by a strip of WS2812 addressable LEDs, with two LEDs allocated per key and additional LEDs reserved for system states such as Wi-Fi connectivity and configuration mode, so that the device communicates its state without needing a screen.
 
 ![Figure 2: Wiring diagram for a single MelodiUS unit.](assets/media/image2.png)
 
@@ -171,14 +171,15 @@ Sustainability was considered at two levels. The PLA and PETG enclosure parts ar
 
 ## 4. Future Improvements
 
-Several improvements have been identified:
+Several improvements have been identified for future iterations of MelodiUS:
 
-1. Expanding the keyboard from eight to sixteen keys would significantly increase musical expressiveness; the MQTT protocol already supports arbitrary key indices, so the work is mostly mechanical and electrical.
-2. Velocity sensitivity could be added by using Hall-effect sensors with variable magnet distances, with the velocity value carried as an additional byte in the MQTT payload.
-3. The originally planned solenoid actuation would transform the device from a visually and aurally synchronised system into a genuinely haptic one; this requires a dedicated driver board, a more robust power supply, and careful mechanical alignment, but the emotional impact of physically moving keys would substantially strengthen the product.
-4. A companion mobile app could provide pairing, configuration, and a record-and-replay mode for remote teaching.
-5. Migrating from a local broker to a cloud-hosted MQTT broker secured with TLS and per-device authentication would extend the operating range from a single Wi-Fi network to genuinely global distances.
-6. Mechanical refinement, such as rubberised key dampers to soften the click, and energy refinement, such as a solar-charged battery option, would further improve the experience and sustainability profile of the product.
+- Expanding the keyboard from eight to sixteen keys would significantly increase musical expressiveness. The MQTT protocol already supports arbitrary key indices, so the work is mostly mechanical and electrical.
+- Velocity sensitivity could be added by using Hall-effect sensors with variable magnet distances, with the velocity value carried as an additional byte in the MQTT payload.
+- The originally planned solenoid actuation would transform the device from a visually and aurally synchronised system into a genuinely haptic one. This requires a dedicated driver board, a more robust power supply, and careful mechanical alignment, but the emotional impact of physically moving keys would substantially strengthen the product.
+- A companion mobile app could provide pairing, configuration, and a record-and-replay mode for remote teaching.
+- Migrating from a local broker to a cloud-hosted MQTT broker secured with TLS and per-device authentication would extend the operating range from a single Wi-Fi network to genuinely global distances.
+- Mechanical refinement (rubberised key dampers to soften the click) and energy refinement (a solar-charged battery option) would further improve the experience and sustainability profile of the product.
+A couple of small things to double-check when you paste it in:
 
 ---
 
